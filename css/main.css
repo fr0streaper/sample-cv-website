@@ -59,14 +59,37 @@ table {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 
+	line-height: 1.5em;
+
 	background-color: #282828;
 	color: #f9f5d7;
 }
 
 body {
-	width: 800px;
+	width: 850px;
 	margin: 0 auto;
 }
+
+header,
+section,
+footer {
+	border: 2px dotted #284228;
+	border-radius: 2px;
+
+	padding: 10px;
+	margin: 10px 0 0 0;
+
+	text-align: left;
+}
+
+header h1,
+section h1,
+section h2,
+section h3,
+footer h2 {
+	text-align: center;
+}
+
 
 b, strong {
 	font-weight: bold;
@@ -113,7 +136,7 @@ ul > li::before {
 
 .content {
 	float: right;
-	width: 600px;
+	width: 650px;
 	margin: 0 25px;
 }
 
