@@ -104,11 +104,13 @@ a:hover {
 
 	display: flex;
 	flex-wrap: wrap;
+
+	justify-content: space-around;
 }
 
 img[class="gallery-item"] {
 	padding: 0px;
-	margin: 7px;
+	margin: 5px;
 
 	width: 300px;
 	height: 300px;
