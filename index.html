@@ -19,11 +19,27 @@
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#skills">skills</a></li>
                     <li><a href="#other">other</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <!--<li><a href="#contact">contact</a></li>-->
                 </ul>
             </nav>
         </aside>
         <div class="content">
+            <div class="modal-container hidden">
+                <aside class="contacts-popup">
+                    <h2>contact me</h2>
+                    <div style="display: inline-block; text-align: left; margin: 0 auto;">
+                        <ul>
+                            <li><a href="https://vk.com/fr0streaper">vk</a></li>
+                            <li><a href="https://t.me/fr0streaper">telegram</a></li>
+                            <li><a href="https://www.linkedin.com/in/andrey-k-28a068b0/">linkedin</a></li>
+                            <li><a href="https://github.com/fr0streaper">github</a></li>
+                        </ul>
+                    </div>
+
+                    <a class="button" onclick="hideContactsPopup()">go back</a>
+                </aside>
+            </div>
+
             <header id="about">
                 <h1>Andrey Kashukov</h1>
                 <p><em>hello there :)</em> <span class="text-quiet"><sub>General</sub><sup>Kenobi</sup></span></p>
@@ -34,6 +50,8 @@
                     received an award at the All-Russia School Olympiad in Informatics in <time datetime="2017">2017</time>. Apart from programming,
                     I'm also interested in language learning and philosophy :)
                 </p>
+
+                <a class="button" onclick="showContactsPopup()">contact me</a>
             </header>
 
             <main>
@@ -125,6 +143,7 @@
                             <img class="gallery-item" src="img/yosemite-national-park.jpg" alt="yosemite-national-park">
                         </a>
                     </div>
+                    <img class="gallery-viewport">
                     <h3>my spirit animal</h3>
                     <pre class="monospace">
                                 /T /I
@@ -176,7 +195,7 @@
                 </section>
             </main>
 
-            <footer id="contact">
+            <footer id="contact" class="hidden">
                 <h2>contact</h2>
                 <ul>
                     <li><a href="https://vk.com/fr0streaper">vk</a></li>
