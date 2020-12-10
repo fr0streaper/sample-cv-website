@@ -40,6 +40,19 @@
                 </aside>
             </div>
 
+            <div class="modal-container hidden">
+                <div class="chat-window">
+                    <a class="button" onclick="hideChatPopup()">go back</a>
+                    <div class="chat-message-container">
+                        <!-- nothing to see here yet -->
+                    </div>
+                    <div class="chat-controls">
+                        <input class="chat-input" type="text" placeholder="enter your message">
+                        <svg class="chat-send-message-button" onclick="sendMessage()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+                    </div>
+                </div>
+            </div>
+
             <header id="about">
                 <h1>Andrey Kashukov</h1>
                 <p><em>hello there :)</em> <span class="text-quiet"><sub>General</sub><sup>Kenobi</sup></span></p>
@@ -51,7 +64,10 @@
                     I'm also interested in language learning and philosophy :)
                 </p>
 
-                <a class="button" onclick="showContactsPopup()">contact me</a>
+                <div class="about-button-container">
+                    <a class="button" onclick="showContactsPopup()">contact me</a>
+                    <a class="button" onclick="showChatPopup()">chat with [REDACTED]</a>
+                </div>
             </header>
 
             <main>
@@ -205,6 +221,15 @@
                 </ul>
             </footer>
         </div>
+
+        <template id="chat-message-row-template">
+            <div class="chat-message-row">
+                <p class="chat-message-text">[something went wrong]</p>
+                <svg class="chat-delete-message-button hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg>
+            </div>
+        </template>
+
+        <script src="js/fr0streaper_functionalExpression.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

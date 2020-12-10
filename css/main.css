@@ -172,7 +172,7 @@ img[class="gallery-item"] {
 .button:visited,
 .button:hover,
 .button:active {
-	padding: 5px;
+	padding: 2px;
 	margin: 5px auto;
 
 	text-decoration: none;
@@ -195,4 +195,99 @@ img[class="gallery-item"] {
 
 .button:active {
 	background-color: #b8bb26;
+}
+
+.chat-window {
+	position: relative;
+	top: 40px;
+	left: 50%;
+	transform: translate(-175px);
+
+	border: 1px dotted #458588;
+	border-radius: 1px;
+	background-color: #282828;
+	z-index: 1;
+
+	width: 500px;
+
+	padding: 10px;
+	text-align: center;
+}
+
+.chat-message-container {
+	border-top: 2px dotted #458588;
+	border-bottom: 2px dotted #458588;
+	margin: 10px auto;
+	padding: 5px;
+
+	height: 500px;
+
+	overflow-y: scroll;
+	scrollbar-color: #458588 #282828;
+}
+
+.chat-controls {
+	margin: 10px auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.chat-input {
+	width: 400px;
+
+	margin: 5px;
+	padding: 2px;
+	border: 0;
+	border-bottom: 2px dotted #b8bb26;
+}
+
+.chat-send-message-button {
+	margin: 5px;
+	height: 20px;
+	fill: #b8bb26;
+}
+
+.chat-send-message-button:hover {
+	fill: #458588;
+}
+
+.chat-message-row {
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.chat-message-row.user-message {
+	flex-direction: row-reverse;
+}
+
+.chat-message-text {
+	margin: 2px;
+	padding: 2px;
+
+	max-width: 300px;
+
+	border: 2px dotted #076678;
+	background-color: #458588;
+	text-align: left;
+}
+
+.user-message .chat-message-text {
+	border: 2px dotted #427b58;
+	background-color: #689d6a;
+}
+
+.chat-delete-message-button {
+	margin: 2px;
+	height: 20px;
+	fill: #cc241d;
+}
+
+.about-button-container {
+	display: flex;
+	flex-direction: row;
 }
